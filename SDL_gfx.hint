@@ -1,0 +1,7 @@
+category: X11
+sdesc: "SDL primitive graphics library (sources)"
+ldesc: "The SDL_gfx library evolved out of the SDL_gfxPrimitives code
+which provided basic drawing routines such as lines, circles or polygons
+for SDL Surfaces and adding a couple other useful functions for zooming
+images for example and doing basic image processing on byte arrays."
+

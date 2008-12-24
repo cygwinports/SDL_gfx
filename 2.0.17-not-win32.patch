@@ -1,0 +1,20 @@
+--- origsrc/SDL_gfx-2.0.17/configure.in	2008-06-01 06:38:16.000000000 -0500
++++ src/SDL_gfx-2.0.17/configure.in	2008-06-17 14:25:11.906250000 -0500
+@@ -63,7 +63,7 @@
+ 
+ dnl Setup target flagsw
+ case "$target" in
+-    *-*-cygwin* | *-*-mingw32*)
++    *-*-mingw32*)
+ 	CFLAGS="$CFLAGS -DWIN32"
+         if test "$build" != "$target"; then # cross-compiling
+             ac_default_prefix=/usr/local/cross-tools/i386-mingw32msvc
+@@ -76,7 +76,7 @@
+ 
+ dnl Figure out which math library to use
+ case "$target" in
+-    *-*-cygwin* | *-*-mingw32*)
++    *-*-mingw32*)
+         MATHLIB=""
+         ;;
+     *-*-beos*)

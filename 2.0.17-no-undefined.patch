@@ -1,0 +1,11 @@
+--- origsrc/SDL_gfx-2.0.17/Makefile.am	2007-02-05 17:23:42.000000000 -0600
++++ src/SDL_gfx-2.0.17/Makefile.am	2008-06-17 14:25:11.593750000 -0500
+@@ -20,7 +20,7 @@
+ 
+ DEFS = @DEFS@ -DBUILD_DLL
+ libSDL_gfx_la_LDFLAGS = 	\
+-	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
++	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) -no-undefined
+ 
+ DISTCLEANFILES = *~ *~c *~h *.cross.cache inc 
+ 
