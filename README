@@ -1,4 +1,4 @@
-libSDL_gfx
+SDL_gfx
 ------------------------------------------
 The SDL_gfx library evolved out of the SDL_gfxPrimitives code which
 provided basic drawing routines such as lines, circles or polygons for
@@ -6,19 +6,20 @@ SDL Surfaces and adding a couple other useful functions for zooming
 images for example and doing basic image processing on byte arrays.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libSDL1.2_0-1.2.13-2
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libSDL1.2_0-1.2.13-10
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -30,30 +31,29 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libSDL_gfx-2.0.18-X-src.tar.bz2
+  unpack SDL_gfx-2.0.18-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libSDL_gfx-2.0.18-X.cygport all
+  cygport ./SDL_gfx-2.0.18-X.cygport all
 
 This will create:
-  /usr/src/libSDL_gfx-2.0.18-X-src.tar.bz2
+  /usr/src/SDL_gfx-2.0.18-X-src.tar.bz2
   /usr/src/libSDL_gfx-devel-2.0.18-X.tar.bz2
-  /usr/src/libSDL_gfx0-2.0.18-X.tar.bz2
+  /usr/src/libSDL_gfx13-2.0.18-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(libSDL_gfx0)
-  /usr/bin/cygSDL_gfx-0.dll
-  /usr/share/doc/libSDL_gfx-2.0.18/AUTHORS
-  /usr/share/doc/libSDL_gfx-2.0.18/COPYING
-  /usr/share/doc/libSDL_gfx-2.0.18/ChangeLog
-  /usr/share/doc/libSDL_gfx-2.0.18/INSTALL
-  /usr/share/doc/libSDL_gfx-2.0.18/LICENSE
-  /usr/share/doc/libSDL_gfx-2.0.18/NEWS
-  /usr/share/doc/libSDL_gfx-2.0.18/README
+(libSDL_gfx13)
+  /usr/bin/cygSDL_gfx-13.dll
+  /usr/share/doc/SDL_gfx/AUTHORS
+  /usr/share/doc/SDL_gfx/COPYING
+  /usr/share/doc/SDL_gfx/ChangeLog
+  /usr/share/doc/SDL_gfx/LICENSE
+  /usr/share/doc/SDL_gfx/NEWS
+  /usr/share/doc/SDL_gfx/README
 
 (libSDL_gfx-devel)
   /usr/include/SDL/SDL_framerate.h
@@ -70,29 +70,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.0.18-1 -----
-Version bump.
-
------ version 2.0.17-1 -----
-Version bump.
-
------ version 2.0.16-1 -----
-Version bump, built with cygport.
-SONAME has finally been stabilized.
-
------ version 2.0.13-1 -----
-Version bump, built with gcc-3.4 and the X11 port of SDL.
-
------ version 2.0.12-1 -----
-Version bump.
-
-Apparently, based on the libtool versioning, this package is API unstable.
-I'm not inclined to make separate packages for each point release, so
-either dependent packages will need to be recompiled, or just manually
-install previous DLLs.
-
------ version 2.0.11-1 -----
-Initial release for Cygwin.
+----- version 2.0.19-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

@@ -6,8 +6,8 @@ PATCH_URI="
 	2.0.17-not-win32.patch
 "
 
-PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
-libSDL_gfx0_CONTENTS="usr/bin/cyg${PN}-0.dll usr/share/doc/"
+PKG_NAMES="${PN} lib${PN}13 lib${PN}-devel"
+libSDL_gfx13_CONTENTS="usr/bin/cyg${PN}-13.dll usr/share/doc/"
 libSDL_gfx_devel_CONTENTS='usr/include/ usr/lib/'
 
 DISTCLEANFILES="acinclude.m4"

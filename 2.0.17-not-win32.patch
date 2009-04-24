@@ -9,12 +9,3 @@
  	CFLAGS="$CFLAGS -DWIN32"
          if test "$build" != "$target"; then # cross-compiling
              ac_default_prefix=/usr/local/cross-tools/i386-mingw32msvc
-@@ -76,7 +76,7 @@
- 
- dnl Figure out which math library to use
- case "$target" in
--    *-*-cygwin* | *-*-mingw32*)
-+    *-*-mingw32*)
-         MATHLIB=""
-         ;;
-     *-*-beos*)

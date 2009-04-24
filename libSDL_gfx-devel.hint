@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libSDL_gfx0 libSDL-devel
+requires: cygwin libSDL_gfx13 libSDL-devel
 external-source: SDL_gfx
 sdesc: "SDL primitive graphics library (development)"
 ldesc: "The SDL_gfx library evolved out of the SDL_gfxPrimitives code 
