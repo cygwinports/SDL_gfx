@@ -6,19 +6,19 @@ SDL Surfaces and adding a couple other useful functions for zooming
 images for example and doing basic image processing on byte arrays.
 
 Runtime requirements:
-  cygwin-1.7.0-45
-  libgcc1-4.3.2-2
-  libSDL1.2_0-1.2.13-10
+  cygwin-1.7.0-62
+  libgcc1-4.3.4-1
+  libSDL1.2_0-1.2.14-1
 
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-12
+  automake1.11-1.11-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  libtool-2.2.7a-14
   make-3.81-2
   sed-4.1.5-2
 
@@ -31,44 +31,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack SDL_gfx-2.0.18-X-src.tar.bz2
+  unpack SDL_gfx-2.0.20-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./SDL_gfx-2.0.18-X.cygport all
+  cygport ./SDL_gfx-2.0.20-X.cygport all
 
 This will create:
-  /usr/src/SDL_gfx-2.0.18-X-src.tar.bz2
-  /usr/src/libSDL_gfx-devel-2.0.18-X.tar.bz2
-  /usr/src/libSDL_gfx13-2.0.18-X.tar.bz2
+  /usr/src/SDL_gfx-2.0.20-X-src.tar.bz2
+  /usr/src/libSDL_gfx-devel-2.0.20-X.tar.bz2
+  /usr/src/libSDL_gfx13-2.0.20-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libSDL_gfx13)
-  /usr/bin/cygSDL_gfx-13.dll
-  /usr/share/doc/SDL_gfx/AUTHORS
-  /usr/share/doc/SDL_gfx/COPYING
-  /usr/share/doc/SDL_gfx/ChangeLog
-  /usr/share/doc/SDL_gfx/LICENSE
-  /usr/share/doc/SDL_gfx/NEWS
-  /usr/share/doc/SDL_gfx/README
-
-(libSDL_gfx-devel)
-  /usr/include/SDL/SDL_framerate.h
-  /usr/include/SDL/SDL_gfxBlitFunc.h
-  /usr/include/SDL/SDL_gfxPrimitives.h
-  /usr/include/SDL/SDL_gfxPrimitives_font.h
-  /usr/include/SDL/SDL_imageFilter.h
-  /usr/include/SDL/SDL_rotozoom.h
-  /usr/lib/libSDL_gfx.a
-  /usr/lib/libSDL_gfx.dll.a
-  /usr/lib/libSDL_gfx.la
-
-------------------
-
 Port Notes:
+
+----- version 2.0.20-1 -----
+Version bump.
 
 ----- version 2.0.19-1 -----
 Initial release for Cygwin 1.7.
