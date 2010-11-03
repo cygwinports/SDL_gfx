@@ -1,0 +1,10 @@
+--- origsrc/SDL_gfx-2.0.22/Makefile.am	2009-12-21 21:00:31.000000000 -0600
++++ src/SDL_gfx-2.0.22/Makefile.am	2010-11-03 02:46:39.642230700 -0500
+@@ -1,7 +1,5 @@
+ # Makefile.am for the SDL_gfx library/DLL
+ 
+-ACLOCAL_AMFLAGS = -I m4
+-
+ lib_LTLIBRARIES = libSDL_gfx.la
+ 
+ libSDL_gfxincludedir = $(includedir)/SDL
