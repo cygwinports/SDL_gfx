@@ -1,0 +1,36 @@
+NAME="SDL_gfx"
+VERSION=2.0.24
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="SDL primitive graphics library"
+DESCRIPTION="The SDL_gfx library evolved out of the SDL_gfxPrimitives code
+which provided basic drawing routines such as lines, circles or polygons
+for SDL Surfaces and adding a couple other useful functions for zooming
+images for example and doing basic image processing on byte arrays."
+HOMEPAGE="http://www.ferzkopp.net/joomla/content/view/19/14/"
+SRC_URI="http://www.ferzkopp.net/Software/SDL_gfx-2.0/SDL_gfx-${VERSION}.tar.gz"
+PATCH_URI="
+	2.0.17-not-win32.patch
+	2.0.22-aclocal-flags.patch
+"
+
+PKG_NAMES="libSDL_gfx14 libSDL_gfx-devel"
+libSDL_gfx14_CONTENTS="usr/bin/cygSDL_gfx-14.dll"
+libSDL_gfx_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/"
+
+NO_AUTOHEADER=1
+
+src_test() {
+	cd ${S}/Test
+#	cygautoreconf
+
+	mkdir -p ${B}/Test
+	cd ${B}/Test
+	# allow in-tree headers to be found
+	ln -sf ${S} SDL
+
+	CYGCONF_SOURCE=${S}/Test \
+	LDFLAGS="-L${B}/.libs" \
+	cygconf
+	cygmake
+}
